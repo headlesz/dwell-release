@@ -96,6 +96,7 @@ keys that work right now.
 | `tmrw` `tmw` `tomorrow` | tomorrow only |
 | `late` `od` `overdue` | overdue only |
 | `mon`…`sun` · `wknd` · `wk` | that day · the next weekend · the next 7 days |
+| `wkdy` `weekday` | monday to friday of the current working week |
 | `someday` `undated` `nodate` | no due date at all |
 | `allday` `aldy` | a date but no time — `not allday` for the timed ones |
 | `hi` `high` · `med` · `low` | priority |
