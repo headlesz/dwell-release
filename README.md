@@ -14,9 +14,6 @@ for the details, press **done** to complete it in Reminders everywhere, and pick
 
 Requires **macOS 26 (Tahoe)**. Swift 6, SwiftUI and AppKit, no dependencies.
 
-This repo carries the built app. The source lives at
-**[headlesz/dwell](https://github.com/headlesz/dwell)**.
-
 ---
 
 ## every reminder gets a flower
@@ -100,10 +97,11 @@ keys that work right now.
 | `late` `od` `overdue` | overdue only |
 | `mon`…`sun` · `wknd` · `wk` | that day · the next weekend · the next 7 days |
 | `someday` `undated` `nodate` | no due date at all |
-| `hi` `!` · `med` · `low` | priority |
+| `hi` `high` · `med` · `low` | priority |
 | `rpt` · `anchored` · `notes` | repeating · pinned to a desktop · has notes |
 | `4pm` `5:30pm` `17:00` | a cutoff — *by* that time, not *at* it |
 | `&` `and` | join two filters |
+| `not` `!` | everything after this comes back out |
 | anything else | a list name |
 
 **`&`** (or the word `and`) puts two filters side by side: `tdy & tmrw` is both days' worth,
@@ -117,6 +115,17 @@ enumerates here.
 
 <p align="center">
   <img src="docs/filter-joined.png" width="430" alt="The picker filtering on 'tdy & tmrw', showing today's, overdue and tomorrow's reminders, with the parse echoed as 'today & tomorrow'">
+</p>
+
+**`not`** (or `!`) takes things back out. `2pm not late` is everything due by 2pm minus the
+overdue ones; `tdy not work` is today's, without work.
+
+It subtracts from the **result**, not from the half it was typed beside — `tdy & tmrw not
+late` is *(today ∪ tomorrow) − overdue*, and the two readings differ by every overdue thing
+due today. With nothing before it, `not late` simply reads as everything except.
+
+<p align="center">
+  <img src="docs/filter-not.png" width="430" alt="The picker filtering on 'tdy not late', showing today's two reminders with the overdue ones removed, echoed as 'today not overdue'">
 </p>
 
 Unlike the search, a filter **stays on**. It survives picking a focus, the pill collapsing and
@@ -268,13 +277,10 @@ something you need to read. It restores itself.
 | typing | `return` ends entry and keeps the query · `esc` clears it |
 | filter | `f` again turns it off — it is the only thing that does |
 | filter | `&` or `and` joins two — `tdy & tmrw` is both days |
+| filter | `not` or `!` subtracts — `2pm not late` drops the overdue |
 | either | `esc` steps back one thing at a time, and closes when there's nothing left |
 
 **Global**: ``⌘⌥` `` opens the actions · ``⌘⌥⇧` `` goes fullscreen
-
-[DESIGN.md](https://github.com/headlesz/dwell/blob/main/DESIGN.md) is the design philosophy
-— the principles, the tensions between them, and the places the obvious implementation fails
-silently.
 
 ## install
 
@@ -286,21 +292,24 @@ xattr -dr com.apple.quarantine /Applications/dwell.app
 open /Applications/dwell.app
 ```
 
-**That middle line is not optional.** This build is ad-hoc signed rather than signed with an
-Apple Developer ID, so macOS quarantines it on download and refuses to open it — usually with
-"dwell is damaged and can't be opened", which is not what has happened. Removing the
-quarantine attribute is what lets it run. If you would rather not take a stranger's word for
-any of that, the source is one repo over and `./build.sh` produces this same bundle.
+**The middle line is not optional.** This build carries an ad-hoc code signature rather than
+an Apple Developer ID, so macOS quarantines it on download and refuses to open it — usually
+saying "dwell is damaged and can't be opened", which is not what has happened. Clearing the
+quarantine attribute is what lets it run.
+
+Being straight about what that costs you: an ad-hoc signature identifies no one. It proves the
+bundle hasn't been altered since it was signed, and nothing whatsoever about who signed it. A
+Developer ID build is coming, and will make both this step and this paragraph unnecessary.
 
 Run it from `/Applications`: the path has to be stable for the Reminders permission to stick,
 and `SMAppService` expects it there.
 
-macOS asks for Reminders access on first launch. There's no dock icon and no window — dwell
-lives in the pill and in a menu bar item, a small rosette in the current task's colours,
-which tells you what you're **dwelling on**, completes it, offers a list to **dwell on** next,
-opens settings, and quits. That menu is also the accessible path: a panel that only takes
-keyboard focus while open is hard for VoiceOver to reach, so everything the pill can do, the
-menu can do.
+macOS asks for Reminders access on first launch, and for nothing else. There's no dock icon and
+no window — dwell lives in the pill and in a menu bar item, a small rosette in the current
+task's colours, which tells you what you're **dwelling on**, completes it, offers a list to
+**dwell on** next, opens settings, and quits. That menu is also the accessible path: a panel
+that only takes keyboard focus while open is hard for VoiceOver to reach, so everything the
+pill can do, the menu can do.
 
 ## what EventKit can't see
 
