@@ -97,6 +97,7 @@ keys that work right now.
 | `late` `od` `overdue` | overdue only |
 | `mon`…`sun` · `wknd` · `wk` | that day · the next weekend · the next 7 days |
 | `someday` `undated` `nodate` | no due date at all |
+| `allday` `aldy` | a date but no time — `not allday` for the timed ones |
 | `hi` `high` · `med` · `low` | priority |
 | `rpt` · `anchored` · `notes` | repeating · pinned to a desktop · has notes |
 | `4pm` `5:30pm` `17:00` | a cutoff — *by* that time, not *at* it |
