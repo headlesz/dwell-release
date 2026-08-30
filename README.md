@@ -80,7 +80,7 @@ The picker's flowers are still. One turning flower is an accent; twenty is noise
   <img src="docs/compose.png" width="430" alt="The compose panel: a title field, a when field reading friday 3pm, the parsed date echoed beneath, and a target list">
 </p>
 
-**`s`** turns the header into a filter and narrows the list as you type. **`return`** ends
+**`/`** turns the header into a filter and narrows the list as you type. **`return`** ends
 the search without picking anything: the filter stays, and the letter keys go back to being
 commands, so you can `a`-anchor the thing you just went looking for. Selecting it is a
 second `return`. The header tells you which of the two you are in — a cursor while you type,
@@ -274,7 +274,7 @@ something you need to read. It restores itself.
 | detail | `shift` turns **done** into **term** — completes it, then deletes it |
 | compose | `shift` turns **add** into **queue** — writes it without focusing it |
 | picker | `↑`/`↓` a row · `tab` next list · `return` select |
-| picker | `s` search · `f` filter · `r` new · `a` anchor · `n` nothing |
+| picker | `/` search · `f` filter · `r` new · `a` anchor · `n` nothing |
 | typing | `return` ends entry and keeps the query · `esc` clears it |
 | filter | `f` again turns it off — it is the only thing that does |
 | filter | `&` or `and` joins two — `tdy & tmrw` is both days |
