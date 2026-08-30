@@ -103,7 +103,21 @@ keys that work right now.
 | `hi` `!` · `med` · `low` | priority |
 | `rpt` · `anchored` · `notes` | repeating · pinned to a desktop · has notes |
 | `4pm` `5:30pm` `17:00` | a cutoff — *by* that time, not *at* it |
+| `&` `and` | join two filters |
 | anything else | a list name |
+
+**`&`** (or the word `and`) puts two filters side by side: `tdy & tmrw` is both days' worth,
+`work tdy & home tmrw` is *(work and today) or (home and tomorrow)*. Terms inside one half
+narrow each other; the halves widen.
+
+That the joining word widens is the point rather than a slip. "today and tomorrow" is a
+request for both days' reminders, and the narrowing reading isn't merely wrong, it's useless —
+nothing is ever due on two days at once, so it would always show an empty list. English *and*
+enumerates here.
+
+<p align="center">
+  <img src="docs/filter-joined.png" width="430" alt="The picker filtering on 'tdy & tmrw', showing today's, overdue and tomorrow's reminders, with the parse echoed as 'today & tomorrow'">
+</p>
 
 Unlike the search, a filter **stays on**. It survives picking a focus, the pill collapsing and
 the panel reopening, until you press `f` again — which is why the header keeps saying `filter
@@ -253,6 +267,7 @@ something you need to read. It restores itself.
 | picker | `s` search · `f` filter · `r` new · `a` anchor · `n` nothing |
 | typing | `return` ends entry and keeps the query · `esc` clears it |
 | filter | `f` again turns it off — it is the only thing that does |
+| filter | `&` or `and` joins two — `tdy & tmrw` is both days |
 | either | `esc` steps back one thing at a time, and closes when there's nothing left |
 
 **Global**: ``⌘⌥` `` opens the actions · ``⌘⌥⇧` `` goes fullscreen
@@ -263,7 +278,7 @@ silently.
 
 ## install
 
-Download **[dwell.zip](../../releases/latest)** — or the copy in this repo — and unzip it.
+Download **[dwell.zip](../../releases/latest)** and unzip it.
 
 ```bash
 cp -R dwell.app /Applications/
