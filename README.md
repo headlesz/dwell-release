@@ -80,8 +80,9 @@ The picker's flowers are still. One turning flower is an accent; twenty is noise
   <img src="docs/compose.png" width="430" alt="The compose panel: a title field, a when field reading friday 3pm, the parsed date echoed beneath, and a target list">
 </p>
 
-**`/`** turns the header into a filter and narrows the list as you type. **`return`** ends
-the search without picking anything: the filter stays, and the letter keys go back to being
+**`/`** turns the header into a filter and narrows the list as you type. The cursor sits on
+the top match for as long as you're typing and moves only when you move it, so `return` is
+always the first thing you can see. **`return`** ends the search without picking anything: the filter stays, and the letter keys go back to being
 commands, so you can `a`-anchor the thing you just went looking for. Selecting it is a
 second `return`. The header tells you which of the two you are in — a cursor while you type,
 the query as plain text once it's committed — and the hints along the bottom only ever list
@@ -264,8 +265,21 @@ need Accessibility permission — dwell asks for nothing beyond Reminders.
 The pill never moves: not when an app goes fullscreen, not across Spaces, not when another
 app is frontmost. It never takes focus and never intercepts a click outside its own silhouette.
 
-**Right-click** (or two-finger click) fades it out for three seconds when it's covering
-something you need to read. It restores itself.
+<p align="center">
+  <img src="docs/marquee.png" width="560" alt="A pill at its maximum width, the title cut off with a soft fade on the right before the anchor dot">
+</p>
+
+**It is never wider than Alcove is with music playing** — the notch plus 37pt each side, so it
+tracks Alcove's proportions on any MacBook. A title that doesn't fit **scrolls**, the way iOS
+Now Playing does: it holds for three seconds, travels left at 32 points a second, and a second
+copy is already where the first began, so it wraps without ever reversing. The rosette and the
+anchor dot stay put; only the text moves, with a soft edge where it leaves and arrives. A
+title that fits is untouched. Reduce Motion never scrolls.
+
+**Right-click** (or two-finger click) fades it out when it's covering something you need to
+read, and while it's faded clicks go straight through to whatever is underneath. It holds for
+as long as your cursor stays there; move away and it comes back, come back mid-fade and it
+drops out again. No second click, ever.
 
 **Keyboard**, once a panel is open:
 
@@ -274,7 +288,7 @@ something you need to read. It restores itself.
 | detail | `tab` reveals the cursor on **done**, so finishing is `tab` then `return` |
 | detail | `shift` turns **done** into **term** — completes it, then deletes it |
 | compose | `shift` turns **add** into **queue** — writes it without focusing it |
-| picker | `↑`/`↓` a row · `tab` next list · `return` select |
+| picker | `↑`/`↓` (or `k`/`j`) a row · `tab` next list · `return` select |
 | picker | `/` search · `f` filter · `r` new · `a` anchor · `n` nothing |
 | typing | `return` ends entry and keeps the query · `esc` clears it |
 | filter | `f` again turns it off — it is the only thing that does |
