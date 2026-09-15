@@ -12,15 +12,5 @@
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <enclosure url="https://github.com/headlesz/dwell-release/releases/download/v1.09/dwell.zip" length="1607082" type="application/octet-stream" sparkle:edSignature="XmQ++TwZUuxlAdUMOUZOJj9336mBMeU4Ln/MTcExiGILR7K4CVeDXrFN9m97Q32/unBbiSFU+8wZcRVF6DCMCg=="/>
         </item>
-        <item>
-            <title>1.08</title>
-            <pubDate>Mon, 14 Sep 2026 19:44:26 -0700</pubDate>
-            <link>https://github.com/headlesz/dwell-release</link>
-            <sparkle:version>58</sparkle:version>
-            <sparkle:shortVersionString>1.08</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/headlesz/dwell-release/releases/download/v1.08/dwell.zip" length="1605065" type="application/octet-stream" sparkle:edSignature="WL/fHMx6g9jQRUxW7I0Nx6hS07sIB9Do6VQ3BqdWCt8g50P4enCE5P3VQDQmVQguuV/gpwawDnbgMe294tJ7AA=="/>
-        </item>
     </channel>
 </rss>
