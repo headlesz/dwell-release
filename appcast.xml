@@ -3,6 +3,16 @@
     <channel>
         <title>dwell</title>
         <item>
+            <title>1.11</title>
+            <pubDate>Tue, 15 Sep 2026 09:43:33 -0700</pubDate>
+            <link>https://github.com/headlesz/dwell-release</link>
+            <sparkle:version>73</sparkle:version>
+            <sparkle:shortVersionString>1.11</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://github.com/headlesz/dwell-release/releases/download/v1.11/dwell.zip" length="1792742" type="application/octet-stream" sparkle:edSignature="E8E+ca7870nj9V6H/a8so42j9vgICFo2/dnOKfTU4LgvoispilwCtMOR6IB2X1mVc6peLUh863sa+Uh61qbPCQ=="/>
+        </item>
+        <item>
             <title>1.10</title>
             <pubDate>Tue, 15 Sep 2026 01:06:22 -0700</pubDate>
             <link>https://github.com/headlesz/dwell-release</link>

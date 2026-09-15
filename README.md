@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/rosette-field.png?v=1.10" width="760" alt="Thirty-two rosettes in a grid, eight list colours across, every one visibly different from the rest">
+  <img src="docs/rosette-field.png?v=1.11" width="760" alt="Thirty-two rosettes in a grid, eight list colours across, every one visibly different from the rest">
 </p>
 
 <h1 align="center">dwell</h1>
@@ -23,7 +23,7 @@ updates and nothing else.
 ## every reminder gets a flower
 
 <p align="center">
-  <img src="docs/rosettes.png?v=1.10" width="840" alt="Twelve rosettes in a row, each five dots, all visibly different from one another">
+  <img src="docs/rosettes.png?v=1.11" width="840" alt="Twelve rosettes in a row, each five dots, all visibly different from one another">
 </p>
 
 five dots. your list's colour at the **centre** — blue for work, orange for home, whatever you
@@ -31,7 +31,7 @@ chose in Reminders. **four petals** unique to the task, grown from its own ident
 reminders from the same list share a centre and differ everywhere else.
 
 <p align="center">
-  <img src="docs/pills.png?v=1.10" width="430" alt="Seven pills, each showing a task title beside its own five-dot flower">
+  <img src="docs/pills.png?v=1.11" width="430" alt="Seven pills, each showing a task title beside its own five-dot flower">
 </p>
 
 *finish the quarterly report* and *write up the standup notes* are both blue at heart, because
@@ -49,7 +49,7 @@ within about a sixth of the colour wheel of the list's hue, so a reminder looks 
 ### it turns
 
 <p align="center">
-  <img src="docs/orbit.png?v=1.10" width="760" alt="Nine frames across one revolution, the petals holding formation as they circle the centre">
+  <img src="docs/orbit.png?v=1.11" width="760" alt="Nine frames across one revolution, the petals holding formation as they circle the centre">
 </p>
 
 the petals hold formation and circle the centre once every fourteen seconds. nine frames
@@ -62,8 +62,8 @@ keep looking like itself.
 ## the same flower, everywhere
 
 <p align="center">
-  <img src="docs/picker.png?v=1.10" width="430" alt="The what's next picker: three list sections, each row showing a reminder's flower beside its title and due date">
-  <img src="docs/detail.png?v=1.10" width="430" alt="The detail panel: a flower beside the task title, then list, due and priority as labelled fields">
+  <img src="docs/picker.png?v=1.11" width="430" alt="The what's next picker: three list sections, each row showing a reminder's flower beside its title and due date">
+  <img src="docs/detail.png?v=1.11" width="430" alt="The detail panel: a flower beside the task title, then list, due and priority as labelled fields">
 </p>
 
 pick a new focus and the same flowers are in the list. open the one you're on and it's there
@@ -80,8 +80,8 @@ the picker's flowers are still. one turning flower is an accent; twenty is noise
 ## finding and capturing
 
 <p align="center">
-  <img src="docs/search.png?v=1.10" width="430" alt="The picker in search mode, the header replaced by a query field, matching rows, and hints reading return done and esc clear">
-  <img src="docs/compose.png?v=1.10" width="430" alt="The compose panel: a title field, a when field reading friday 3pm, the parsed date echoed beneath, and a target list">
+  <img src="docs/search.png?v=1.11" width="430" alt="The picker in search mode, the header replaced by a query field, matching rows, and hints reading return done and esc clear">
+  <img src="docs/compose.png?v=1.11" width="430" alt="The compose panel: a title field, a when field reading friday 3pm, the parsed date echoed beneath, and a target list">
 </p>
 
 **`/`** turns the header into a search and narrows the list as you type. the cursor sits on
@@ -120,7 +120,7 @@ both days, and the narrowing reading isn't just wrong, it's useless — nothing 
 two days at once, so it would always show an empty list. english *and* enumerates here.
 
 <p align="center">
-  <img src="docs/filter-joined.png?v=1.10" width="430" alt="The picker filtering on 'tdy & tmrw', showing today's, overdue and tomorrow's reminders, with the parse echoed as 'today & tomorrow'">
+  <img src="docs/filter-joined.png?v=1.11" width="430" alt="The picker filtering on 'tdy & tmrw', showing today's, overdue and tomorrow's reminders, with the parse echoed as 'today & tomorrow'">
 </p>
 
 **`not`** (or `!`) takes things back out. `2pm not late` is everything due by 2pm without the
@@ -131,7 +131,7 @@ late` is *(today ∪ tomorrow) − overdue*, and the two readings differ by ever
 due today. with nothing before it, `not late` simply means everything except.
 
 <p align="center">
-  <img src="docs/filter-not.png?v=1.10" width="430" alt="The picker filtering on 'tdy not late', showing today's two reminders with the overdue ones removed, echoed as 'today not overdue'">
+  <img src="docs/filter-not.png?v=1.11" width="430" alt="The picker filtering on 'tdy not late', showing today's two reminders with the overdue ones removed, echoed as 'today not overdue'">
 </p>
 
 unlike a search, a filter **stays on**. it survives picking a focus, the pill collapsing and
@@ -148,7 +148,7 @@ nothing and colours the `zzz`, because a typo that quietly changed the list woul
 reading a shorter one with no idea why.
 
 <p align="center">
-  <img src="docs/filter.png?v=1.10" width="430" alt="The picker filtering on 'work tdy', showing two work items due today, with the parse echoed as 'work · today'">
+  <img src="docs/filter.png?v=1.11" width="430" alt="The picker filtering on 'work tdy', showing two work items due today, with the parse echoed as 'work · today'">
 </p>
 
 **`r`** opens a little compose panel without leaving the notch — a title, a date typed the way
@@ -157,7 +157,7 @@ the date field echoes what it understood before you commit, and says so plainly 
 understood nothing.
 
 <p align="center">
-  <img src="docs/queue.png?v=1.10" width="430" alt="The compose panel with shift held: the add button replaced by a green queue button">
+  <img src="docs/queue.png?v=1.11" width="430" alt="The compose panel with shift held: the add button replaced by a green queue button">
 </p>
 
 **hold shift** and **add** becomes **queue**, in green: the reminder is written but your focus
@@ -195,7 +195,7 @@ vending it rather than breaking the app. it also means dwell can't go to the App
 ## finishing something
 
 <p align="center">
-  <img src="docs/encouragement.png?v=1.10" width="520" alt="A pill reading 'look at you go' with a colour gradient flowing through the letters">
+  <img src="docs/encouragement.png?v=1.11" width="520" alt="A pill reading 'look at you go' with a colour gradient flowing through the letters">
 </p>
 
 press **done** and the reminder completes in Reminders on every device. then its flower comes
@@ -205,7 +205,7 @@ notes*, *off your plate* — with those same colours flowing through the letters
 half seconds, then, when you're ready, what's next?
 
 <p align="center">
-  <img src="docs/term.png?v=1.10" width="430" alt="The detail panel with shift held: the done button replaced by a red term button">
+  <img src="docs/term.png?v=1.11" width="430" alt="The detail panel with shift held: the done button replaced by a red term button">
 </p>
 
 **hold shift** and **done** becomes **term**, in red. that one completes the reminder and then
@@ -225,7 +225,7 @@ empty pill is not a backlog. it's room to think.
 ## the whole screen, when you want it
 
 <p align="center">
-  <img src="docs/presentation.png?v=1.10" width="720" alt="The fullscreen view: one large rosette above the task title and the current time, centred on black">
+  <img src="docs/presentation.png?v=1.11" width="720" alt="The fullscreen view: one large rosette above the task title and the current time, centred on black">
 </p>
 
 **⌘⌥⇧`** takes the flower and the title to every display at once, like a screen saver, with
@@ -246,8 +246,8 @@ pressing the chord.
 ## settings
 
 <p align="center">
-  <img src="docs/settings.png?v=1.10" width="430" alt="The settings window: a sidebar listing settings, license and about, with two rebindable shortcut rows, desktop, startup and update controls">
-  <img src="docs/license.png?v=1.10" width="430" alt="The license pane: trial with two days left, a key field with an activate chip, and the buy link">
+  <img src="docs/settings.png?v=1.11" width="430" alt="The settings window: a sidebar listing settings, license and about, with two rebindable shortcut rows, desktop, startup and update controls">
+  <img src="docs/license.png?v=1.11" width="430" alt="The license pane: trial with two days left, a key field with an activate chip, and the buy link">
 </p>
 
 **⌘⌥`** opens the current task's actions from anywhere — or what's next, if nothing is set.
@@ -280,7 +280,7 @@ is frontmost. it never takes focus and never intercepts a click outside its own 
 guest on your screen — always there, never in the way.
 
 <p align="center">
-  <img src="docs/marquee.png?v=1.10" width="560" alt="A pill at its maximum width, the title cut off with a soft fade on the right before the anchor dot">
+  <img src="docs/marquee.png?v=1.11" width="560" alt="A pill at its maximum width, the title cut off with a soft fade on the right before the anchor dot">
 </p>
 
 **it's never wider than Alcove is with music playing** — the notch plus 37pt each side, so it
