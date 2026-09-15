@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/rosette-field.png?v=1.09" width="760" alt="Thirty-two rosettes in a grid, eight list colours across, every one visibly different from the rest">
+  <img src="docs/rosette-field.png?v=1.10" width="760" alt="Thirty-two rosettes in a grid, eight list colours across, every one visibly different from the rest">
 </p>
 
 <h1 align="center">dwell</h1>
@@ -19,7 +19,7 @@ Requires **macOS 26 (Tahoe)**. Swift 6, SwiftUI and AppKit, no dependencies.
 ## every reminder gets a flower
 
 <p align="center">
-  <img src="docs/rosettes.png?v=1.09" width="840" alt="Twelve rosettes in a row, each five dots, all visibly different from one another">
+  <img src="docs/rosettes.png?v=1.10" width="840" alt="Twelve rosettes in a row, each five dots, all visibly different from one another">
 </p>
 
 Five dots. The **centre** is your list's colour — blue for work, orange for home, whatever
@@ -27,7 +27,7 @@ you set in Reminders. The **four petals** come from that reminder's own identifi
 tasks in the same list share a centre and differ everywhere else.
 
 <p align="center">
-  <img src="docs/pills.png?v=1.09" width="430" alt="Seven pills, each showing a task title beside its own five-dot flower">
+  <img src="docs/pills.png?v=1.10" width="430" alt="Seven pills, each showing a task title beside its own five-dot flower">
 </p>
 
 *finish the quarterly report* and *write up the standup notes* are both blue-centred because
@@ -45,7 +45,7 @@ stay within about a sixth of the colour wheel of the list's hue, so a reminder r
 ### it turns
 
 <p align="center">
-  <img src="docs/orbit.png?v=1.09" width="760" alt="Nine frames across one revolution, the petals holding formation as they circle the centre">
+  <img src="docs/orbit.png?v=1.10" width="760" alt="Nine frames across one revolution, the petals holding formation as they circle the centre">
 </p>
 
 The petals hold formation and circle the centre once every fourteen seconds. Nine frames
@@ -58,8 +58,8 @@ recognisable.
 ## the same flower, everywhere
 
 <p align="center">
-  <img src="docs/picker.png?v=1.09" width="430" alt="The what's next picker: three list sections, each row showing a reminder's flower beside its title and due date">
-  <img src="docs/detail.png?v=1.09" width="430" alt="The detail panel: a flower beside the task title, then list, due and priority as labelled fields">
+  <img src="docs/picker.png?v=1.10" width="430" alt="The what's next picker: three list sections, each row showing a reminder's flower beside its title and due date">
+  <img src="docs/detail.png?v=1.10" width="430" alt="The detail panel: a flower beside the task title, then list, due and priority as labelled fields">
 </p>
 
 Pick a new focus and the same flowers are in the list. Open the one you're on and it's there
@@ -76,8 +76,8 @@ The picker's flowers are still. One turning flower is an accent; twenty is noise
 ## finding and capturing
 
 <p align="center">
-  <img src="docs/search.png?v=1.09" width="430" alt="The picker in search mode, the header replaced by a query field, matching rows, and hints reading return done and esc clear">
-  <img src="docs/compose.png?v=1.09" width="430" alt="The compose panel: a title field, a when field reading friday 3pm, the parsed date echoed beneath, and a target list">
+  <img src="docs/search.png?v=1.10" width="430" alt="The picker in search mode, the header replaced by a query field, matching rows, and hints reading return done and esc clear">
+  <img src="docs/compose.png?v=1.10" width="430" alt="The compose panel: a title field, a when field reading friday 3pm, the parsed date echoed beneath, and a target list">
 </p>
 
 **`/`** turns the header into a filter and narrows the list as you type. The cursor sits on
@@ -117,7 +117,7 @@ nothing is ever due on two days at once, so it would always show an empty list. 
 enumerates here.
 
 <p align="center">
-  <img src="docs/filter-joined.png?v=1.09" width="430" alt="The picker filtering on 'tdy & tmrw', showing today's, overdue and tomorrow's reminders, with the parse echoed as 'today & tomorrow'">
+  <img src="docs/filter-joined.png?v=1.10" width="430" alt="The picker filtering on 'tdy & tmrw', showing today's, overdue and tomorrow's reminders, with the parse echoed as 'today & tomorrow'">
 </p>
 
 **`not`** (or `!`) takes things back out. `2pm not late` is everything due by 2pm minus the
@@ -128,7 +128,7 @@ late` is *(today ∪ tomorrow) − overdue*, and the two readings differ by ever
 due today. With nothing before it, `not late` simply reads as everything except.
 
 <p align="center">
-  <img src="docs/filter-not.png?v=1.09" width="430" alt="The picker filtering on 'tdy not late', showing today's two reminders with the overdue ones removed, echoed as 'today not overdue'">
+  <img src="docs/filter-not.png?v=1.10" width="430" alt="The picker filtering on 'tdy not late', showing today's two reminders with the overdue ones removed, echoed as 'today not overdue'">
 </p>
 
 Unlike the search, a filter **stays on**. It survives picking a focus, the pill collapsing and
@@ -145,7 +145,7 @@ nothing and colours the `zzz`, because a typo that silently changed the list wou
 reading a shorter one with no idea why.
 
 <p align="center">
-  <img src="docs/filter.png?v=1.09" width="430" alt="The picker filtering on 'work tdy', showing two work items due today, with the parse echoed as 'work · today'">
+  <img src="docs/filter.png?v=1.10" width="430" alt="The picker filtering on 'work tdy', showing two work items due today, with the parse echoed as 'work · today'">
 </p>
 
 **`r`** opens a
@@ -155,7 +155,7 @@ field echoes what it understood before you commit, and says so plainly when it u
 nothing.
 
 <p align="center">
-  <img src="docs/queue.png?v=1.09" width="430" alt="The compose panel with shift held: the add button replaced by a green queue button">
+  <img src="docs/queue.png?v=1.10" width="430" alt="The compose panel with shift held: the add button replaced by a green queue button">
 </p>
 
 **Hold shift** and **add** becomes **queue**, in green: the reminder is written but the focus
@@ -196,7 +196,7 @@ App Store as-is.
 ## finishing something
 
 <p align="center">
-  <img src="docs/encouragement.png?v=1.09" width="520" alt="A pill reading 'look at you go' with a colour gradient flowing through the letters">
+  <img src="docs/encouragement.png?v=1.10" width="520" alt="A pill reading 'look at you go' with a colour gradient flowing through the letters">
 </p>
 
 Press **done** and the reminder completes in Reminders on every device. Then its flower comes
@@ -206,7 +206,7 @@ notes*, *off your plate* — with those same colours flowing through the letters
 half seconds, then it asks what's next.
 
 <p align="center">
-  <img src="docs/term.png?v=1.09" width="430" alt="The detail panel with shift held: the done button replaced by a red term button">
+  <img src="docs/term.png?v=1.10" width="430" alt="The detail panel with shift held: the done button replaced by a red term button">
 </p>
 
 **Hold shift** and **done** becomes **term**, in red. That one completes the reminder and
@@ -226,7 +226,7 @@ pill is not a backlog.
 ## the whole screen, when you want it
 
 <p align="center">
-  <img src="docs/presentation.png?v=1.09" width="720" alt="The fullscreen view: one large rosette above the task title and the current time, centred on black">
+  <img src="docs/presentation.png?v=1.10" width="720" alt="The fullscreen view: one large rosette above the task title and the current time, centred on black">
 </p>
 
 **⌘⌥⇧`** takes the flower and the title to every display at once, like a screen saver,
@@ -247,8 +247,8 @@ from pressing the chord.
 ## settings
 
 <p align="center">
-  <img src="docs/settings.png?v=1.09" width="430" alt="The settings window: a sidebar listing settings and about, with two rebindable shortcut rows, desktop and startup controls">
-  <img src="docs/about.png?v=1.09" width="430" alt="The about pane: a large rosette, the name, version, author and links">
+  <img src="docs/settings.png?v=1.10" width="430" alt="The settings window: a sidebar listing settings, license and about, with two rebindable shortcut rows, desktop, startup and update controls">
+  <img src="docs/license.png?v=1.10" width="430" alt="The license pane: trial with two days left, a key field with an activate chip, and the buy link">
 </p>
 
 **⌘⌥`** opens the current task's actions from anywhere — or what's next, if nothing is
@@ -265,13 +265,22 @@ downloads it, verifies its signature, swaps itself out and relaunches — with n
 because a pill that runs until the Mac does would otherwise never get to install one. The
 same pane has *check now* and a switch to turn the automatic checks off.
 
+**Three days free, then $8.** dwell runs exactly as it does now for three days and never
+mentions it; *settings → license* keeps count. After that the pill says *trial's up* and
+clicking it opens that pane instead of the picker. One key covers three Macs, and
+*deactivate this mac* frees a slot when one is sold. The record lives in the Keychain, so
+deleting the app doesn't restart the clock; a clock rolled back reads as expired. dwell talks
+to trydwell.app for exactly three things — activating a key, checking it weekly, and freeing a
+slot — sending the key, a device id and the Mac's name. Never a reminder. If the service can't
+be reached, the last answer stands for thirty days.
+
 ## the rest of it
 
 The pill never moves: not when an app goes fullscreen, not across Spaces, not when another
 app is frontmost. It never takes focus and never intercepts a click outside its own silhouette.
 
 <p align="center">
-  <img src="docs/marquee.png?v=1.09" width="560" alt="A pill at its maximum width, the title cut off with a soft fade on the right before the anchor dot">
+  <img src="docs/marquee.png?v=1.10" width="560" alt="A pill at its maximum width, the title cut off with a soft fade on the right before the anchor dot">
 </p>
 
 **It is never wider than Alcove is with music playing** — the notch plus 37pt each side, so it
@@ -302,6 +311,16 @@ drops out again. No second click, ever.
 | either | `esc` steps back one thing at a time, and closes when there's nothing left |
 
 **Global**: ``⌘⌥` `` opens the actions · ``⌘⌥⇧` `` goes fullscreen
+
+## buy
+
+**Three days free, then $8, once.** The trial is the whole app and never mentions itself;
+after three days the pill says *trial's up* and waits for a key. One key covers three Macs,
+every future update is included, and there is a fourteen-day refund with no reason needed.
+
+**[buy dwell · $8](https://buy.stripe.com/aFafZi28U95b5J50Rx6c000)** — the key is on the
+page after checkout and in your email. [terms](docs/TERMS.md) · [privacy](docs/PRIVACY.md):
+what the license service keeps, and that nothing about your reminders ever leaves your Mac.
 
 ## install
 
